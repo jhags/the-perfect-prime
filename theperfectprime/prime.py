@@ -1,5 +1,14 @@
 
 
+def check_inputs(func):
+    def wrapper(value):
+        if value <= 1:
+            raise Exception("The input value must be greater than 1.")
+        return func(value)
+    return wrapper
+
+
+@check_inputs
 def isPrime(number):
     for i in range(2, number):
        if number % i == 0:
@@ -17,6 +26,7 @@ def Nth_Prime(n):
     return primeNumbers[-1]
 
 
+@check_inputs
 def prime_factors(n):
     i = 2
     factors = []

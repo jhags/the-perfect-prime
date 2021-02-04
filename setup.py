@@ -16,7 +16,7 @@ setup(
     description='Prime number calculations',
     long_description=readme,
     long_description_content_type="text/x-rst",
-    url='https://github.com/jhags/routely',
+    url='https://github.com/jhags/theperfectprime',
     author='J Hagstrom',
     license='MIT',
     classifiers=[
@@ -24,7 +24,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=find_packages(include=['routely', 'routely.*']),
+    packages=find_packages(include=['theperfectprime', 'theperfectprime.*']),
     install_requires=required,
     tests_require=['pytest', 'pytest-cov', 'coveralls']
 )
