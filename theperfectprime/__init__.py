@@ -1,1 +1,1 @@
-from .prime import Nth_Prime, isPrime, prime_factors
+from .prime import nth_prime, isPrime, prime_factors, n_primes
